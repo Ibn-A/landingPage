@@ -2,28 +2,56 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="index.css">
         <title> landing page </title>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li class="logo"><a href="">LOGO</a></li>
-                    <li class="nav-link"><a href="">About</a></li>
-                    <li class="nav-link"><a href="">Services</a></li>
-                    <li class="nav-link"><a href="">Contact</a></li>
+            <nav class="navbar">
+                <!-- LOGO -->
+                <div class="logo">
+                    Header Logo
+                </div>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                    <!-- USING CHECKBOX HACK 
+                        <input type="checkbox" id="checkbox_toggle" />
+                        <label for="checkbox_toggle" class="hamburger">&#9776;</label> 
+                    -->
+                    <!-- NAVIGATION MENU -->
+                    <div class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li class="services">
+                            <a href="/">Services</a>
+                            <!-- DROPDOWN MENU -->
+                            <ul class="dropdown">
+                                <li><a href="/">Js/nodejs </a></li>
+                                <li><a href="/">php </a></li>
+                                <li><a href="/">python </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Contact</a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="hero"></div>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>This website is awesome</h1>
+                    <p class="hero-secondary-text">This website has some subtext that goes here under the main title. It's a smaller font and color is lower contrast.</p>
+                    <button class="sign-up">Sign up</button>
+                </div>
+            </div>
             <div class="info"></div>
             <div class="quote"></div>
             <div class="signUp"></div>
             
         </main>
-        <footer>
+        <footer class="item">
             <p>copyright <span>&#169</span> Landing Page 2022</p>
         </footer>
         
