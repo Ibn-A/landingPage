@@ -185,6 +185,8 @@ main h1{
 }
 
 .image{
+    background-color: powderblue;
+    border: solid;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -211,7 +213,17 @@ main h1{
 }
 .signUp{
    display: flex;
-   background-color: #FFFFFF;
+   justify-content: center;
+   align-items: center;
+   gap: 32px;
+   background-color: #3882F6;
+   border-radius: 5px;
+   padding: 36px;
+   margin: 100px auto;
+   flex-flow: row wrap;
+}
+.signUp button{
+    border: 2px solid #f9faf8;
 }
 
 /* FOOTER */
