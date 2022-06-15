@@ -41,6 +41,10 @@ button{
     color: #f9faf8;
     padding-bottom: 2px;
 }
+button:hover{
+    background-color: #f9faf8;
+    color: #f7601b;
+}
 a{
     text-decoration: none;
 }
@@ -202,14 +206,21 @@ main h1{
     background-color: #FFFFFF;
 }
 .quote{
-    padding: 80px 35%;
+    padding: 80px 25%;
     display: flex;
+    flex-direction: column;
     background-color: #E5E7EB;
-    width: 100%;
     color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
 }
+
 .author{
-    display: flex;
+   display: flex;
+   flex-direction: row-reverse;
+   font-size: 24px;
+   font-weight: bold;
 }
 .signUp{
    display: flex;
@@ -225,7 +236,9 @@ main h1{
 .signUp button{
     border: 2px solid #f9faf8;
 }
-
+.small{
+    font-size: 12px;
+}
 /* FOOTER */
 footer{
     display: block;
